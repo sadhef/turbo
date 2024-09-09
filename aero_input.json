@@ -1,0 +1,9 @@
+{
+ "name" : "Sycamore160_Aero",
+ "tip_dia" : 0.161,
+ "hub_dia" : 0.057,
+ "phi" : 0.581,
+ "J": 0.4,
+ "df": 0.4,
+ "sigma" : 1
+}

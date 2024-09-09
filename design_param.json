@@ -1,0 +1,112 @@
+{
+    "geometry-ver": "geometry-v1.1",
+	"name": "Sycamore160",
+    "turbomachinery": {
+        "fan-geometry": {
+            "tip_dia": 0.161,
+            "htr": 0.4,
+			"hub_dia": 0.057,
+            "AR": [2.5, 2],
+            "sigma": 1,
+            "gapping": {
+                "dx_gap": 0.4,
+                "dx_duct": 0.5
+            }
+        },
+        "design-mean-line": {
+            "phi": 0.581,
+            "J": null,
+            "k": 1,
+            "DF": 0.3,
+            "eta_turbo": 0.8,
+            "eta_elec": 0.8
+        },
+        "design-3D": {
+            "n": 0.5,
+            "lean": {
+                "igv": [30, 10, -10, -30],
+                "rotor": [0, 0, 0, 0],
+                "ogv": [-10, -25, -25, -10]
+            },
+            "sweep": {
+                "igv": [0, 23, 30, 23, 0],
+                "rotor": [0, 0, 0, 0, 0],
+                "ogv": [-20, 10, 15, 15, -20]
+            },
+            "igv-span-locs": [0, 0.25, 0.5, 0.75, 1],
+            "igv-span-chord": [1, 0.8, 0.7, 0.8, 1],
+            "rad_fillet": 1.5e-3
+        },
+        "cross-section": {
+            "thick_max": 0.1,
+            "thick_max_scaling": [1.5, 1, 0.9, 0.9, 1, 1.5],
+            "donor-blade": {
+                "dcam_le": -1.1,
+                "dcam_te": -0.4,
+                "qcam": 2,
+                "thick_te": 0.25,
+                "s_thick_max": 0.3,
+                "rad_thick_max": 0.2,
+                "rad_le": 7,
+                "wedge_te": 60
+            }
+        }
+    },
+    "design-point": {
+        "v0": 40,
+        "T": 130,
+        "ht": 0,
+        "rh": 0,
+        "dTamb": 0,
+        "sigma": 1
+    },
+    "nacelle": {
+        "shape": {
+            "r_hub_delta": 0.001,
+            "r_lip": 0.095,
+            "t_te": 1e-3,
+            "x_lip": -0.02,
+            "xchord": 0.2,
+            "x_nose": 0,
+            "e_nose": 1,
+            "x_tail": 0.17,
+            "l_exit": 0.1,
+            "l_cone": 0.12,
+            "thick_max": 0.025,
+            "drdx_tail": -0.9,
+            "rad_in": 0.48
+        },
+        "cowl-camberline": {
+            "chi_le": -2,
+            "qcam": 0,
+            "dcam_le": -2,
+            "dcam_te": -0.5
+        },
+        "outer-thickness": {
+            "rad_le": 5,
+            "thick_max": null,
+            "s_thick_max": 0.25,
+            "thick_te": 0,
+            "wedge_te": 63,
+            "rad_thick_max": 0.12,
+            "tchord": null
+        },
+        "inner-thickness": {
+            "rad_le": -2,
+            "thick_max": 0,
+            "s_thick_max": -2,
+            "thick_te": -0.5,
+            "wedge_te": -2,
+            "rad_thick_max": -2,
+            "tchord": -2
+        }
+    },
+	"structures": {
+		"engine": {
+			"mass": 0.35
+		},
+		"rotor": {
+			"an2": 4.6
+		}
+	}
+}
